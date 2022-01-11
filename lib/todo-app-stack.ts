@@ -27,7 +27,7 @@ export class TodoAppStack extends cdk.Stack {
  
     ///Lambda Fucntion
     const todoLambda = new lambda.Function(this, "TodoFucntion", {
-      functionName:"todoHandler13A",
+      functionName:"todoHandler",
       runtime: lambda.Runtime.NODEJS_12_X,            ///set nodejs runtime environment
       code: lambda.Code.fromAsset("functions"),          ///path for lambda function directory
       handler: 'main.handler',                       ///specfic fucntion in specific file
